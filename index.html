@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swallowing Therapy</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/918210037261?text=Hello!%20I%20want%20to%20book%20an%20appointment%20at%20Swallowing%20Therapy."
+    class="whatsapp-btn" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Header & Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <a href="#" class="logo">
+          <i class="fas fa-ear"></i>
+          <span>Swallowing Therapy</span>
+        </a>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#appointment">Appointment</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <div class="container">
+        <h1 class="fade-in">Home Swallowing Therapy</h1>
+        <p class="fade-in delay-1">Having trouble swallowing? We help you eat and drink safely and comfortably. Our
+          therapists come to your home to teach you exercises and techniques for better swallowing.</p>
+        <a href="#appointment" class="btn hero-btn fade-in delay-2">Book Appointment Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Services Section -->
+  <section id="services" class="section services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Specialized Services</h2>
+        <p>We provide complete swallowing care using safe, effective techniques to help you eat and drink comfortably.
+        </p>
+      </div>
+
+      <div class="services-container">
+        <div class="service-card fade-in">
+          <div class="card-img">
+            <img src="assets/Swallowing ass .jpg" alt="Swallowing therapy exercise">
+          </div>
+          <div class="card-content">
+            <div class="card-icon">
+              <i class="fas fa-stethoscope"></i>
+
+            </div>
+            <h3>Swallowing Assessment</h3>
+            <p>We check how you swallow and find out what's causing the problem.</p>
+            <a href="#appointment" class="btn card-btn">Book Now</a>
+          </div>
+        </div>
+
+        <div class="service-card fade-in delay-1">
+          <div class="card-img">
+            <img src="assets/s.therapy.jpg" alt="Swallowing Therapy Session">
+          </div>
+          <div class="card-content">
+            <div class="card-icon">
+              <i class="fas fa-hand-holding-medical"></i>
+
+            </div>
+            <h3>Swallowing Therapy</h3>
+            <p>Easy exercises to make your swallowing muscles stronger and safer.</p>
+            <a href="#appointment" class="btn card-btn">Book Now</a>
+          </div>
+        </div>
+
+        <div class="service-card fade-in delay-2">
+          <div class="card-img">
+            <img src="assets/speech th.jpg" alt="Speech Therapy Session">
+          </div>
+          <div class="card-content">
+            <div class="card-icon">
+              <i class="fas fa-comments"></i>
+
+            </div>
+            <h3>Speech Therapy</h3>
+            <p>Improve communication skills, speech clarity, and language development through personalized therapy
+              sessions.</p>
+            <a href="#appointment" class="btn card-btn">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Appointment Section -->
+  <section id="appointment" class="section appointment">
+    <div class="container">
+      <div class="section-title">
+        <h2>Book Your Appointment</h2>
+        <p>Schedule a consultation with our specialists. We'll contact you to confirm your appointment time.</p>
+      </div>
+
+      <form id="appointmentForm" class="appointment-form fade-in">
+        <!-- Web3Forms Hidden Fields -->
+        <input type="hidden" name="access_key" value="76ccf164-0c63-4c86-8f23-b85294efad9d">
+        <input type="hidden" name="subject" value="New Appointment Request from EarThera">
+        <input type="hidden" name="from_name" value="EarThera Website">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter your phone number"
+              required>
+          </div>
+
+          <div class="form-group">
+            <label for="service">Select Service *</label>
+            <select id="service" name="service" class="form-control" required>
+              <option value="">Choose a service</option>
+              <option value="Swallowing Assessment">Swallowing Assessment</option>
+              <option value="Swallowing Therapy">Swallowing Therapy</option>
+              <option value="Speech Therapy">Speech Therapy</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="date">Preferred Date </label>
+          <input type="date" id="date" name="date" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label for="message">Additional Message (Optional)</label>
+          <textarea id="message" name="message" class="form-control" rows="4"
+            placeholder="Tell us about your concerns or special requests"></textarea>
+        </div>
+
+        <button type="submit" class="btn submit-btn" id="submitBtn">Book Appointment</button>
+
+        <div id="formMessage"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-about">
+          <div class="footer-logo">
+            <i class="fas fa-ear"></i> Swallowing Therapy
+          </div>
+          <p>We provide expert swallowing therapy and rehabilitation services to help you overcome eating difficulties
+            and enjoy meals safely again.</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#appointment">Book Appointment</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Contact Info</h3>
+          <div class="contact-info">
+            <div>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Salarjung colony, Tolichowki</span>
+            </div>
+            <div>
+              <i class="fas fa-phone-alt"></i>
+              <span>+91 8210037261</span>
+            </div>
+            <div>
+              <i class="fas fa-envelope"></i>
+              <span>info@earthera.com</span>
+            </div>
+            <div>
+              <i class="fas fa-clock"></i>
+              <span>Mon - Sat: 9:00 AM - 7:00 PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Home Swallowing Therapy. All rights reserved. | Dedicated to safer swallowing and better
+          nutrition</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
