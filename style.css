@@ -317,6 +317,7 @@ header {
 .appointment {
   background: linear-gradient(rgba(10, 61, 92, 0.9), rgba(10, 61, 92, 0.9)), url('https://images.pexels.com/photos/4173239/pexels-photo-4173239.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') center/cover no-repeat;
   color: white;
+  background-attachment: fixed;
 }
 
 .appointment .section-title h2,
@@ -704,3 +705,109 @@ footer {
 .delay-2 {
   animation-delay: 0.4s;
 }
+
+@media (max-width: 768px) {
+  .doctor-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .doctor-card img {
+    margin: 0 auto;
+  }
+
+  .doctor-card div[style*="display:flex"] {
+    justify-content: center;
+  }
+}
+
+/* ===== DOCTOR SECTION ===== */
+.doctor-section {
+  background: linear-gradient(rgba(10, 61, 92, 0.9), rgba(10, 61, 92, 0.9)),
+    url('https://images.pexels.com/photos/4173239/pexels-photo-4173239.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') center/cover no-repeat;
+  background-attachment: fixed;
+}
+
+.doctor-section .section-title h2 {
+  color: white;
+}
+
+.doctor-section .section-title p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.doctor-section .section-title::after {
+  background: #ff914d;
+}
+
+.doctor-card {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.doctor-photo {
+  flex-shrink: 0;
+}
+
+.doctor-photo img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #1a6b8c;
+}
+
+.doctor-info h3 {
+  font-size: 1.8rem;
+  color: #0a3d5c;
+  margin-bottom: 5px;
+}
+
+.doctor-title {
+  color: #1a6b8c;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.doctor-desc {
+  color: #6c757d;
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.doctor-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.doctor-badges span {
+  background: #1a6b8c;
+  color: white;
+  padding: 7px 18px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .doctor-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .doctor-photo img {
+    margin: 0 auto;
+  }
+
+  .doctor-badges {
+    justify-content: center;
+  }
+}
+
